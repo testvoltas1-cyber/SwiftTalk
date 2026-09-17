@@ -29,6 +29,12 @@ async function startServer() {
   // Serve uploaded media files directly
   app.use('/uploads', express.static(uploadsDir));
 
+  // Serve static public assets (sitemap.xml, robots.txt, ads.txt, icons)
+  const publicDir = path.join(__dirname, 'public');
+  if (fs.existsSync(publicDir)) {
+    app.use(express.static(publicDir));
+  }
+
   // API: Health check
   app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', timestamp: Date.now() });

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive internal endpoints
+Disallow: /api/
+Disallow: /ws
+
+# Sitemaps
+Sitemap: https://chatindian.online/sitemap.xml
