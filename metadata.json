@@ -1,0 +1,11 @@
+{
+  "name": "ChatIndian - Free Online Chat Rooms",
+  "description": "ChatIndian - Connect, chat and make new friends on live chat rooms with instant real-time messaging.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
